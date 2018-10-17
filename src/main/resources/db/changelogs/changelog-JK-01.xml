@@ -1,0 +1,17 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <changeSet author="jedrzej.frankowski" id="JK-01-create-table-users">
+        <createTable tableName="users">
+            <column name="id" type="varchar(50)">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="firstname" type="varchar(20)"/>
+            <column name="lastname" type="varchar(20)"/>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>

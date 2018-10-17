@@ -1,0 +1,17 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <changeSet id="users-inserts" author="jedrzej.frankowski">
+        <insert tableName="users">
+            <column name="id" value="11111"/>
+            <column name="firstname" value="jedrzejfrankowski"/>
+        </insert>
+        <insert tableName="users">
+            <column name="id" value="2222"/>
+            <column name="firstname" value="jakubkozlowski"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
